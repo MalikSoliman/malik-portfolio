@@ -1,92 +1,74 @@
-import Image from "next/image";
-
 export default function Hero() {
-  return (
-    <section id="home" className="py-28">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-[1fr_auto] items-center">
-          
-          {/* LEFT: Main content */}
-          <div>
-            <h1 className="text-4xl font-semibold leading-tight text-[var(--foreground)] sm:text-5xl">
-              Malik Soliman
-            </h1>
-
-            <p className="mt-3 text-lg text-[var(--muted)]">
-              Computer Engineering · Systems Integration · Diagnostics
-            </p>
-
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-[var(--muted-2)]">
-              Computer Engineering graduate with hands-on experience in
-              hardware–software integration, system testing, troubleshooting,
-              and technical documentation. Strong foundation in embedded systems,
-              diagnostics, scripting, and verification workflows, with a focus
-              on building reliable, testable, and scalable engineering systems.
-            </p>
-
-            {/* Actions */}
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href="/files/Malik-Soliman-Resume.pdf"
-                download
-                className="rounded-full bg-[var(--primary)] px-6 py-3 text-sm font-medium text-white hover:opacity-90"
-              >
-                Download Resume
-              </a>
-
-              <a
-                href="#projects"
-                className="rounded-full border border-[var(--border)] px-6 py-3 text-sm font-medium text-[var(--foreground)] hover:bg-[var(--card)]"
-              >
-                View Projects
-              </a>
+    return (
+      <section id="home" className="py-24">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-[1fr_auto] items-center">
+            
+            {/* LEFT: TEXT */}
+            <div>
+              <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+                Malik Soliman
+              </h1>
+  
+              <p className="mt-3 text-lg text-slate-600">
+                Computer Engineering · Systems Integration · Diagnostics
+              </p>
+  
+              <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-600">
+                Computer Engineering graduate with hands-on experience in
+                hardware–software integration, system testing, fault simulation,
+                and diagnostics. Strong foundation in embedded systems,
+                structured logging, and verification workflows, with a focus
+                on building reliable, testable, and scalable engineering systems.
+              </p>
+  
+              {/* ACTION BUTTONS */}
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="/files/Malik-Soliman-Resume.pdf"
+                  download
+                  className="rounded-lg bg-blue-600 px-6 py-3 text-sm font-medium text-white hover:bg-blue-700"
+                >
+                  Download Resume
+                </a>
+  
+                <a
+                  href="#projects"
+                  className="rounded-lg border border-slate-300 px-6 py-3 text-sm font-medium text-slate-800 hover:bg-slate-100"
+                >
+                  View Projects
+                </a>
+              </div>
+  
+              {/* CONTACT */}
+              <div className="mt-8 flex flex-wrap gap-6 text-sm text-slate-600">
+                <span>Middletown Township, NJ</span>
+                <a href="mailto:maliksoliman6@gmail.com">
+                  maliksoliman6@gmail.com
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/malik-soliman/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline"
+                >
+                  LinkedIn
+                </a>
+              </div>
             </div>
-
-            {/* Contact row */}
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--muted)]">
-              <span>Middletown Township, NJ</span>
-              <span>•</span>
-              <a
-                href="mailto:maliksoliman6@gmail.com"
-                className="hover:text-[var(--primary)]"
-              >
-                maliksoliman6@gmail.com
-              </a>
-              <span>•</span>
-              <a
-                href="tel:17322722441"
-                className="hover:text-[var(--primary)]"
-              >
-                (732) 272-2441
-              </a>
-              <span>•</span>
-              <a
-                href="https://www.linkedin.com/in/malik-soliman/"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-[var(--primary)]"
-              >
-                LinkedIn
-              </a>
-            </div>
-          </div>
-
-          {/* RIGHT: Profile image */}
-          <div className="flex justify-center md:justify-end">
-            <div className="overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--card)] shadow-sm">
-              <Image
-                src="/profile/profile.jpg"
+  
+            {/* RIGHT: PROFILE IMAGE */}
+            <div className="flex justify-center md:justify-end">
+              <img
+                src="/profile.jpeg"
                 alt="Malik Soliman"
-                width={260}
-                height={320}
-                className="object-cover"
-                priority
+                className="h-[260px] w-[260px] rounded-2xl object-cover border border-slate-300"
               />
             </div>
+  
           </div>
-
         </div>
-      </div>
-    </section>
-  );
-}
+      </section>
+    );
+  }
+  
