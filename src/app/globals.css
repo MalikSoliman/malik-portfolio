@@ -1,34 +1,18 @@
 @import "tailwindcss";
 
-/* LinkedIn-style light theme */
 :root {
-  --background: #f8fafc; /* slate-50 */
-  --foreground: #0a2540; /* navy */
+  --background: #0b1220;     /* deep navy/near-black */
+  --foreground: #e6edf7;     /* soft white */
 
-  --card: #ffffff;
-  --border: #e2e8f0;
-  --muted: #475569;
-  --muted-2: #64748b;
+  --card: #0f172a;           /* dark card background */
+  --border: #1f2a44;         /* subtle borders */
+  --muted: #a7b4c7;          /* muted text */
+  --muted-2: #7c8aa3;        /* secondary muted text */
 
-  --primary: #0a66c2; /* LinkedIn blue */
-}
-
-/* Optional dark mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0b1220;
-    --foreground: #e6edf7;
-
-    --card: #0f172a;
-    --border: #1f2a44;
-    --muted: #a7b4c7;
-    --muted-2: #7c8aa3;
-
-    --primary: #0a66c2;
-  }
+  --primary: #0a66c2;        /* LinkedIn blue accent */
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
 }
