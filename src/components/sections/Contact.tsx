@@ -49,7 +49,7 @@ const CONTACT = [
   
         <div className="mt-10">
           <a
-            href="/resume.pdf"
+            href="/Malik-Soliman--Resume.pdf"
             className="inline-flex items-center rounded-full border border-black/15 px-5 py-2 text-sm font-medium opacity-90 hover:opacity-100"
           >
             Download Resume →
