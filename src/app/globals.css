@@ -1,15 +1,16 @@
+/* src/app/globals.css */
+
 @import "tailwindcss";
 
 :root {
-  --background: #0b1220;     /* deep navy/near-black */
-  --foreground: #e6edf7;     /* soft white */
+  --background: #0b1220;
+  --foreground: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #3b82f6;
+}
 
-  --card: #0f172a;           /* dark card background */
-  --border: #1f2a44;         /* subtle borders */
-  --muted: #a7b4c7;          /* muted text */
-  --muted-2: #7c8aa3;        /* secondary muted text */
-
-  --primary: #0a66c2;        /* LinkedIn blue accent */
+html {
+  color-scheme: dark;
 }
 
 body {
